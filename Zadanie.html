@@ -1,0 +1,67 @@
+<html>
+<body>
+<div style="color:blue; font-size:50px;">
+<script language="JavaScript">
+var c=prompt("c=","");
+var b=prompt("b=","");
+var c_cho=parseFloat(c);
+var b_cho=parseFloat(b);
+var apif_cho;
+var a_cho;
+var P_cho;
+var Ob_cho;
+var h3_cho;
+var sinalfa_cho;
+var cosalfa_cho;
+var tgalfa_cho;
+var ctgalfa_cho;
+var alfa_cho;
+var beta_cho;
+var fixa_cho;
+var fixp_cho;
+var fixob_cho;
+var fixh3_cho;
+var fixsin_cho;
+var fixcos_cho;
+var fixtg_cho;
+var fixctg_cho;
+var fixalfa_cho;
+var fixbeta_cho;
+apif_cho = Math.pow(c_cho, 2) - Math.pow(b_cho, 2);
+a_cho = Math.sqrt(apif_cho)
+fixa_cho = a_cho.toFixed(3);
+P_cho = (a_cho*b_cho)/2;
+fixp_cho = P_cho.toFixed(3);
+Ob_cho = a_cho+b_cho+c_cho;
+fixob_cho = Ob_cho.toFixed(3);
+h3_cho = (a_cho*b_cho)/c_cho;
+fixh3_cho = h3_cho.toFixed(3);
+sinalfa_cho = a_cho/c_cho;
+fixsin_cho = sinalfa_cho.toFixed(3);
+cosalfa_cho = b_cho/c_cho;
+fixcos_cho = cosalfa_cho.toFixed(3);
+tgalfa_cho = a_cho/b_cho;
+fixtg_cho = tgalfa_cho.toFixed(3);
+ctgalfa_cho = b_cho/a_cho;
+fixctg_cho = ctgalfa_cho.toFixed(3);
+alfa_cho = (Math.asin(sinalfa_cho) * 180) / Math.PI;
+fixalfa_cho = alfa_cho.toFixed(3);
+beta_cho = 180 - (90 + alfa_cho);
+fixbeta_cho = beta_cho.toFixed(3)
+document.write("a = "+fixa_cho+"<br>");
+document.write("Pole = "+fixp_cho+"<br>");
+document.write("Obwod = "+fixob_cho+"<br>");
+document.write("h1 = "+fixa_cho+"<br>");
+document.write("h2 = "+b_cho+"<br>");
+document.write("h3 = "+fixh3_cho+"<br>");
+document.write("sin = "+fixsin_cho+"<br>");
+document.write("cos = "+fixcos_cho+"<br>");
+document.write("tg = "+fixtg_cho+"<br>");
+document.write("ctg = "+fixctg_cho+"<br>");
+document.write("alfa = "+fixalfa_cho+"<br>");
+document.write("beta = "+fixbeta_cho+"<br>");
+document.write("gamma = "+90+"<br>");
+</script>
+</div>
+</body>
+</html>

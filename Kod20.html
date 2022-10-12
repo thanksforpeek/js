@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<textarea name="20" cols="60" rows="30" readonly>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<script language="JavaScript">
+function Obw_cho(bc,ad,bh)
+{
+ bc_cho=parseFloat(bc)
+ ad_cho=parseFloat(ad)
+ bh_cho=parseFloat(bh)
+ ah_cho = (ad_cho-bc_cho)/2;//ah=mp(trapecia rownoramiena)
+ ab_cho = Math.sqrt(Math.pow(ah_cho, 2) + Math.pow(bh_cho, 2));// ab=cd
+ Obw_cho = 2*ab_cho+bc_cho+ad_cho;
+ document.getElementsByName('obj')[0].value=Obw_cho.toFixed(2); 
+}
+function Pow_cho(bc,ad,bh)
+{
+ bc_cho=parseFloat(bc)
+ ad_cho=parseFloat(ad)
+ bh_cho=parseFloat(bh)
+ Pow_cho = ((bc_cho+ad_cho)/2)*bh_cho;
+ document.getElementsByName('pole')[0].value=Pow_cho.toFixed(2);
+}
+ </script>
+</head> 
+<body> 
+Pobliczanie Obwodu i Pola
+<br> <br>
+<form name="formularz" action="..." onsubmit="Obw_cho(this.strona.value,this.strona1.value,this.wysokosc.value); 
+Pow_cho(this.strona.value,this.strona1.value,this.wysokosc.value);return false"> 
+ Podaj pierwszy stronu=
+ <input size="6" name="strona">
+ Podaj drugu strony=
+ <input size="6" name="strona1">
+ Podaj wysokosc=
+ <input size="6" name="wysokosc">
+ <br> <br>
+ <input TYPE="submit" Value="oblicz" >
+ <br> <br>
+ Obwod=
+ <input size="6" name="obj">
+ Pole=
+ <input size="6" name="pole"> 
+</form>
+</body>
+</html>
+</textarea>
+</body>
+</html>

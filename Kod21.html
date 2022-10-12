@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<textarea name="21" cols="60" rows="30" readonly>
+<html> 
+<head> 
+ <script language="JavaScript">
+function drabina(d,x)
+{
+ d_cho=parseFloat(d)
+ x_cho=parseFloat(x)
+ drabina=Math.sqrt(Math.pow(d_cho, 2) + Math.pow(x_cho, 2));
+ document.getElementsByName('obj')[0].value=drabina.toFixed(2); 
+}
+function alfa(d,x)
+{
+ d_cho=parseFloat(d)
+ x_cho=parseFloat(x)
+19
+ alfa=(Math.atan(d_cho/x_cho) * 180) / Math.PI;
+ document.getElementsByName('pole')[0].value=alfa.toFixed(2);
+}
+ </script>
+</head> 
+<body> 
+Pobliczanie drabiny i alfa
+<br> <br>
+<form name="formularz" action="..." onsubmit="drabina(this.promien.value,this.wysokosc.value); 
+alfa(this.promien.value,this.wysokosc.value);return false"> 
+ Podaj d=
+ <input size="6" name="promien">
+ Podaj x=
+ <input size="6" name="wysokosc">
+ <br> <br>
+ <input TYPE="submit" Value="oblicz" >
+ <br> <br>
+ Drabina=
+ <input size="6" name="obj">
+ Alfa=
+ <input size="6" name="pole"> 
+</form>
+</body> 
+</html>
+</textarea>
+</body>
+</html>

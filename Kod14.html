@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<textarea name="14" cols="60" rows="30" readonly>
+<html>
+<body>
+<div style="color:blue; font-size:50px;">
+<script language="JavaScript">
+var n0_cho=prompt("N0=","");
+var t_cho=prompt("t=","");
+var t12_cho=prompt("T1/2=","");
+var n0=parseFloat(n0_cho);
+var t=parseFloat(t_cho);
+var t12=parseFloat(t12_cho);
+var lambda;
+var n;
+lambda = Math.log(2)/t12;
+n = n0*Math.pow(Math.E, lambda*(-1)*t);
+document.write("N0 = "+n0+" [sztuk]"+"<br>"+"t = "+t+" [lat]"+"<br>"+"T1/2 = "+t12+" [lat]"+"<br>"+"Lambda = "+lambda.toFixed(7)+" [1/rok]"+"<br>"+"N = "+n.toFixed(7)+" [sztuk]"+"<br>");
+</script>
+</div>
+</body>
+</html>
+</textarea>
+</body>
+</html>
